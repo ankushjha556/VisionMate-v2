@@ -12,7 +12,7 @@ VisionMate v2 is distributed as an Android APK through this repository's **Relea
 The direct release link will be added here when the first public release is published:
 
 ```text
-https://github.com/<your-github-username>/<your-repository-name>/releases/latest
+https://github.com/ankushjha556/VisionMate-v2/releases/latest
 ```
 
 ## Install on Android
