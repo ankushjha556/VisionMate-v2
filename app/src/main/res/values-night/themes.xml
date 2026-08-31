@@ -1,0 +1,21 @@
+<resources>
+    <!-- Dark theme: disable light status bar icons (white icons instead) -->
+    <style name="Theme.VisionMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/vm_primary</item>
+        <item name="colorOnPrimary">@color/vm_on_primary</item>
+        <item name="colorPrimaryContainer">@color/vm_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/vm_on_primary_container</item>
+        <item name="colorSecondary">@color/vm_secondary</item>
+        <item name="colorOnSecondary">@color/vm_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/vm_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/vm_on_secondary_container</item>
+        <item name="colorError">@color/vm_danger</item>
+        <item name="colorErrorContainer">@color/vm_danger_container</item>
+        <item name="android:colorBackground">@color/vm_background</item>
+        <item name="colorSurface">@color/vm_surface</item>
+        <item name="colorOnSurface">@color/vm_on_surface</item>
+        <item name="android:statusBarColor">@color/vm_background</item>
+        <item name="android:navigationBarColor">@color/vm_background</item>
+        <item name="android:windowLightStatusBar">false</item>
+    </style>
+</resources>

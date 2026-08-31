@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">VisionMate</string>
+
+    <!-- Accessibility -->
+    <string name="camera_preview_desc">Live camera preview. VisionMate analyzes this feed to describe your surroundings.</string>
+    <string name="detection_overlay_desc">Detected objects are outlined here with distance labels.</string>
+    <string name="btn_listen_desc">Tap to speak a command. Say: describe, read text, or what is ahead.</string>
+    <string name="btn_caption_desc">Describe what is in front of me</string>
+    <string name="btn_ocr_desc">Read text in view</string>
+    <string name="btn_ahead_desc">Check what is ahead of me, with obstacle warnings</string>
+    <string name="btn_stop_desc">Stop the voice immediately</string>
+    <string name="btn_obstacle_desc">Toggle continuous obstacle warnings</string>
+    <string name="btn_settings_desc">Open settings</string>
+    <string name="status_idle">Ready</string>
+    <string name="status_listening">Listening…</string>
+    <string name="status_thinking">Analyzing…</string>
+    <string name="status_speaking">Speaking…</string>
+    <string name="tap_to_talk_hint">Tap a button, or press a volume key to talk</string>
+    <string name="settings_title">Settings</string>
+
+    <!-- Big buttons -->
+    <string name="btn_describe">DESCRIBE SCENE</string>
+    <string name="btn_ocr">READ TEXT</string>
+    <string name="btn_ahead">WHAT\'S AHEAD</string>
+    <string name="btn_listen">TALK</string>
+    <string name="btn_stop">STOP VOICE</string>
+
+    <!-- Model status -->
+    <string name="model_available">ready</string>
+    <string name="model_missing">not loaded</string>
+
+    <!-- Obstacle warnings -->
+    <string name="obstacle_on">Obstacle warnings on</string>
+    <string name="obstacle_off">Obstacle warnings off</string>
+    <string name="obstacle_on_short">Obstacle warnings: ON</string>
+    <string name="obstacle_off_short">Obstacle warnings: OFF</string>
+
+    <!-- Settings labels -->
+    <string name="settings_section_appearance">Appearance</string>
+    <string name="settings_theme">Theme</string>
+    <string name="theme_system">Follow system</string>
+    <string name="theme_light">Light</string>
+    <string name="theme_dark">Dark</string>
+    <string name="settings_section_vision">Vision</string>
+    <string name="settings_obstacle">Continuous obstacle warnings</string>
+    <string name="settings_obstacle_desc">Checks depth every 1.5 seconds and warns about hazards</string>
+    <string name="settings_path_guidance">Path guidance</string>
+    <string name="settings_path_guidance_desc">Suggests free space direction when the path is blocked</string>
+    <string name="settings_section_voice">Voice</string>
+    <string name="settings_tts_rate">Speech speed</string>
+    <string name="settings_volume_trigger">Volume button trigger</string>
+    <string name="settings_volume_trigger_desc">Press either volume key to start listening</string>
+    <string name="settings_language">Response language</string>
+    <string name="lang_auto">Auto (match your command)</string>
+    <string name="lang_en">English</string>
+    <string name="lang_hi">Hindi</string>
+    <string name="settings_section_models">Models on device</string>
+
+    <!-- Misc -->
+    <string name="camera_error">Camera could not start. Please restart the app.</string>
+    <string name="mic_permission_needed">Microphone permission is needed for voice commands.</string>
+</resources>

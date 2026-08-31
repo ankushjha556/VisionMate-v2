@@ -1,0 +1,34 @@
+# ---- Gradle / build outputs (regenerated on every build, never commit) ----
+.gradle/
+build/
+app/build/
+captures/
+.externalNativeBuild/
+.cxx/
+
+# ---- Local config (contains PRIVATE keys — never commit) ----
+local.properties
+keystore.properties
+
+# ---- Android Studio / IDE files ----
+.idea/
+*.iml
+.vscode/
+
+# ---- Signing files (private) ----
+*.jks
+*.keystore
+
+# ---- OS junk ----
+.DS_Store
+Thumbs.db
+
+# ---- Python side outputs (from setup scripts, not needed in repo) ----
+__pycache__/
+*.onnx
+*.pt
+
+# ---- IMPORTANT: model files ARE part of this repo ----
+# The 6 files in app/src/main/assets/models/ are intentionally committed
+# so that anyone can clone and build. Do NOT add "*.tflite" here.
+# (exception only if you decide to host models via Releases instead — see UPLOAD_GUIDE.md)

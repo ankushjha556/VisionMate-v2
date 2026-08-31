@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<full-backup-content>
+    <!-- Model files live in assets (inside the APK), nothing sensitive to exclude -->
+</full-backup-content>

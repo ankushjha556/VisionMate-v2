@@ -1,0 +1,35 @@
+<resources>
+    <!-- Light theme palette — high contrast -->
+    <color name="vm_background">#FFFFFF</color>
+    <color name="vm_surface">#F4F5F7</color>
+    <color name="vm_on_background">#12141A</color>
+    <color name="vm_on_surface">#3A3F4A</color>
+    <color name="vm_primary">#B45309</color>          <!-- deep amber -->
+    <color name="vm_on_primary">#FFFFFF</color>
+    <color name="vm_primary_container">#FFE9C7</color>
+    <color name="vm_on_primary_container">#4A2E00</color>
+    <color name="vm_secondary">#0F766E</color>         <!-- teal -->
+    <color name="vm_on_secondary">#FFFFFF</color>
+    <color name="vm_secondary_container">#C8F1EC</color>
+    <color name="vm_on_secondary_container">#003731</color>
+    <color name="vm_danger">#C62828</color>
+    <color name="vm_stop_bg">#C62828</color>
+    <color name="vm_danger_container">#FFDAD6</color>
+
+    <!-- Detection overlay (bright enough for both themes) -->
+    <color name="overlay_box">#FFB300</color>
+    <color name="overlay_box_close">#E53935</color>
+    <color name="overlay_text_bg">#CC000000</color>
+    <color name="overlay_text">#FFFFFF</color>
+    <color name="overlay_center_cross">#4DD0C4</color>
+
+    <!-- Status ring -->
+    <color name="ring_idle">#9AA3B2</color>
+    <color name="ring_listening">#FFB300</color>
+    <color name="ring_processing">#4DD0C4</color>
+    <color name="ring_warning">#FF5252</color>
+
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="ic_launcher_background">#12141A</color>
+</resources>

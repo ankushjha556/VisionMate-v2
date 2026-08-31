@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:keepScreenOn="true">
+
+    <androidx.camera.view.PreviewView
+        android:id="@+id/viewFinder"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/camera_preview_desc"
+        android:importantForAccessibility="no" />
+
+    <com.ankushjha.visionmate.camera.DetectionOverlayView
+        android:id="@+id/detectionOverlay"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:contentDescription="@string/detection_overlay_desc"
+        android:importantForAccessibility="no" />
+
+    <!-- ============ TOP BAR ============ -->
+    <LinearLayout
+        android:id="@+id/topBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="8dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/scrim_top"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/appTitle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/app_name"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowRadius="4" />
+
+        <TextView
+            android:id="@+id/modelStatusChip"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/status_chip_bg"
+            android:paddingStart="12dp"
+            android:paddingEnd="12dp"
+            android:paddingTop="6dp"
+            android:paddingBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            android:clickable="true"
+            android:focusable="true"
+            android:contentDescription="@string/btn_settings_desc"
+            android:text="@string/model_available" />
+
+        <ImageButton
+            android:id="@+id/btnSettings"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginStart="8dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:src="@drawable/ic_settings"
+            android:contentDescription="@string/btn_settings_desc"
+            app:tint="@color/white" />
+    </LinearLayout>
+
+    <!-- ============ BOTTOM CONTROL PANEL ============ -->
+    <LinearLayout
+        android:id="@+id/bottomPanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:paddingBottom="24dp"
+        android:paddingStart="14dp"
+        android:paddingEnd="14dp"
+        android:background="@drawable/scrim_bottom"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <TextView
+            android:id="@+id/statusText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/status_idle"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:shadowRadius="6"
+            android:accessibilityLiveRegion="polite"
+            android:importantForAccessibility="yes" />
+
+        <TextView
+            android:id="@+id/hintText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:gravity="center"
+            android:text="@string/tap_to_talk_hint"
+            android:textColor="#D9FFFFFF"
+            android:textSize="14sp"
+            android:shadowColor="@color/black"
+            android:shadowRadius="4"
+            android:importantForAccessibility="no" />
+
+        <!-- Primary action: biggest button on the screen -->
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnDescribe"
+            style="@style/VM.BigButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:text="@string/btn_describe"
+            android:textSize="20sp"
+            android:contentDescription="@string/btn_caption_desc"
+            app:icon="@drawable/ic_caption"
+            app:iconGravity="textStart" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnOcr"
+                style="@style/VM.ChipButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_ocr"
+                android:textSize="18sp"
+                android:contentDescription="@string/btn_ocr_desc"
+                app:icon="@drawable/ic_ocr"
+                app:iconGravity="textStart" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnAhead"
+                style="@style/VM.ChipButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/btn_ahead"
+                android:textSize="18sp"
+                android:contentDescription="@string/btn_ahead_desc"
+                app:icon="@drawable/ic_warning"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:baselineAligned="false">
+
+            <!-- Mic: square, prominent — talk to the app -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnListen"
+                style="@style/VM.BigButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/btn_listen"
+                android:textSize="18sp"
+                android:contentDescription="@string/btn_listen_desc"
+                app:icon="@drawable/ic_mic"
+                app:iconGravity="textStart" />
+
+            <!-- STOP: silences the app instantly -->
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btnStop"
+                style="@style/VM.StopButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginStart="10dp"
+                android:text="@string/btn_stop"
+                android:textSize="18sp"
+                android:contentDescription="@string/btn_stop_desc"
+                app:icon="@drawable/ic_stop"
+                app:iconGravity="textStart" />
+        </LinearLayout>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnObstacle"
+            style="Widget.Material3.Button.TextButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            android:minHeight="48dp"
+            android:contentDescription="@string/btn_obstacle_desc"
+            android:textColor="@color/white"
+            android:textSize="14sp"
+            app:icon="@drawable/ic_warning"
+            app:iconTint="@color/white" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

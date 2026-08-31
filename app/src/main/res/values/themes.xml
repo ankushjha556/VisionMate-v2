@@ -1,0 +1,73 @@
+<resources>
+    <!-- Base light theme. DayNight switches values-night automatically. -->
+    <style name="Theme.VisionMate" parent="Theme.Material3.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/vm_primary</item>
+        <item name="colorOnPrimary">@color/vm_on_primary</item>
+        <item name="colorPrimaryContainer">@color/vm_primary_container</item>
+        <item name="colorOnPrimaryContainer">@color/vm_on_primary_container</item>
+        <item name="colorSecondary">@color/vm_secondary</item>
+        <item name="colorOnSecondary">@color/vm_on_secondary</item>
+        <item name="colorSecondaryContainer">@color/vm_secondary_container</item>
+        <item name="colorOnSecondaryContainer">@color/vm_on_secondary_container</item>
+        <item name="colorError">@color/vm_danger</item>
+        <item name="colorErrorContainer">@color/vm_danger_container</item>
+        <item name="android:colorBackground">@color/vm_background</item>
+        <item name="colorSurface">@color/vm_surface</item>
+        <item name="colorOnSurface">@color/vm_on_surface</item>
+        <item name="android:statusBarColor">@color/vm_background</item>
+        <item name="android:navigationBarColor">@color/vm_background</item>
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!-- High-contrast text styles for accessibility -->
+    <style name="VM.StatusText" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/vm_on_background</item>
+        <item name="android:alpha">0.92</item>
+    </style>
+
+    <style name="VM.HintText" parent="TextAppearance.Material3.BodyMedium">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/vm_on_surface</item>
+    </style>
+
+    <style name="VM.BigButton" parent="Widget.Material3.Button">
+        <item name="android:minWidth">88dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">28dp</item>
+        <item name="android:insetTop">10dp</item>
+        <item name="android:insetBottom">10dp</item>
+        <item name="cornerRadius">22dp</item>
+    </style>
+
+    <style name="VM.ChipButton" parent="Widget.Material3.Button.TonalButton">
+        <item name="android:minWidth">56dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">26dp</item>
+        <item name="android:insetTop">10dp</item>
+        <item name="android:insetBottom">10dp</item>
+        <item name="cornerRadius">22dp</item>
+    </style>
+
+    <!-- STOP is the safety hatch — visually loud and unmistakable. -->
+    <style name="VM.StopButton" parent="Widget.Material3.Button">
+        <item name="android:minWidth">56dp</item>
+        <item name="android:minHeight">76dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="iconGravity">textStart</item>
+        <item name="iconSize">26dp</item>
+        <item name="android:insetTop">10dp</item>
+        <item name="android:insetBottom">10dp</item>
+        <item name="cornerRadius">22dp</item>
+        <item name="backgroundTint">@color/vm_stop_bg</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="iconTint">@color/white</item>
+    </style>
+</resources>

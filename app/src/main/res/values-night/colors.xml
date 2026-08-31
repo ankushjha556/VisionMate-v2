@@ -1,0 +1,18 @@
+<resources>
+    <!-- Dark theme palette — near-black, high contrast, glare-free for light-sensitive users -->
+    <color name="vm_background">#0A0C10</color>
+    <color name="vm_surface">#161A21</color>
+    <color name="vm_on_background">#F2F4F8</color>
+    <color name="vm_on_surface">#C3C9D4</color>
+    <color name="vm_primary">#FFB300</color>
+    <color name="vm_on_primary">#1E1300</color>
+    <color name="vm_primary_container">#4A3800</color>
+    <color name="vm_on_primary_container">#FFE9C7</color>
+    <color name="vm_secondary">#4DD0C4</color>
+    <color name="vm_on_secondary">#003731</color>
+    <color name="vm_secondary_container">#00504A</color>
+    <color name="vm_on_secondary_container">#C8F1EC</color>
+    <color name="vm_danger">#FF8A80</color>
+    <color name="vm_stop_bg">#D32F2F</color>
+    <color name="vm_danger_container">#93000A</color>
+</resources>

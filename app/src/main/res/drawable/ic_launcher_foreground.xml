@@ -1,0 +1,9 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp" android:height="108dp"
+    android:viewportWidth="108" android:viewportHeight="108">
+    <!-- Eye shape: protection + vision -->
+    <path android:fillColor="#FFB300"
+        android:pathData="M54,38c-13.25,0 -24.56,8.15 -29.2,19.7C29.44,69.25 40.75,77.4 54,77.4s24.56,-8.15 29.2,-19.7C78.56,46.15 67.25,38 54,38zM54,71.4c-7.5,0 -13.6,-6.1 -13.6,-13.6S46.5,44.2 54,44.2s13.6,6.1 13.6,13.6S61.5,71.4 54,71.4z"/>
+    <path android:fillColor="#4DD0C4"
+        android:pathData="M54,49.8c-4.4,0 -8,3.6 -8,8s3.6,8 8,8s8,-3.6 8,-8S58.4,49.8 54,49.8z"/>
+</vector>
